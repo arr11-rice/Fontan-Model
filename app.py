@@ -12,16 +12,10 @@ import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
-# Ensure you have a folder to save plots
-#PLOTS_FOLDER = 'static/plots'
-#os.makedirs(PLOTS_FOLDER, exist_ok=True)
-
 # Render the pages
 @app.route("/")
 def index():
     return render_template("index.html")
-
-
 
 @app.route('/slider_page')
 def slider():
@@ -34,8 +28,6 @@ def display_plot():
 @app.route('/heatmap_page')
 def heatmap():
     return render_template('heatmap_page.html')
-
-
 
 # Process the slider input
 @app.route("/process", methods=["POST"])
