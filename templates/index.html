@@ -16,6 +16,7 @@
             <a href="/slider_page"><button>Slider Page</button></a>
             <a href="/plot_page"><button>Display Plot Page</button></a>
             <a href="/heatmap_page"><button>Heatmap Page</button></a>
+            <a href="/conditions_page"><button>Preset Conditions Page</button></a>
         </div>
     </div>
 
@@ -92,7 +93,7 @@
         document.addEventListener('DOMContentLoaded', () => {
 
         const image = document.getElementById('clickable-image');
-        image.style.width = '45%'; // reduce size
+        image.style.width = '60%'; // reduce size
         image.style.height = 'auto'; // Maintain aspect ratio
 
         imageMapResize(); // Resizes all image maps on the page
@@ -115,8 +116,7 @@
             <span id="modal-close" class="close">&times;</span>
             <p id="modal-text"></p>
         </div>
-    </div> 
-
+    </div>
     <script src="/static/script.js"></script>
 </body>
 </html>
