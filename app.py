@@ -471,7 +471,7 @@ def apply_preset():
     presets = {
         "lowPreload": {
             "HR": 100, "UVR": 45, "LVR": 35, "PVR": 10, "S_sa": 0.99, "Hb": 15, "CVO2u": 70, "CVO2l": 50,
-            "C_d": 1/45, "C_s": 1/9000, "C_sa": 2/243, "C_pv": 20/81, "C_pa": 4/243  
+            "C_d": 2/100, "C_s": 0.01/100, "C_sa": (1/135 * 1.2), "C_pv": (30/135*1.2), "C_pa": (2/135 * 1.2)  
         },
         "lungProblem": {
             # no compliance changes
@@ -480,7 +480,7 @@ def apply_preset():
         },
         "heartFailure": {
             "HR": 100, "UVR": 45, "LVR": 35, "PVR": 10, "S_sa": 0.99, "Hb": 15, "CVO2u": 70, "CVO2l": 50,
-            "C_d": 0.018, "C_s": 1/9000, "C_sa": 1/150, "C_pv": 1/5, "C_pa": 1/75  
+            "C_d": 0.018, "C_s": 1/9000, "C_sa": 1/135, "C_pv": 30/135, "C_pa": 2/135  
         } 
     }
 
